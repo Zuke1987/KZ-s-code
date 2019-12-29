@@ -9,22 +9,31 @@
   <html lang="en">
     <head>
       <title>Kevin Zuhoski's Portfolio</title>
+      <link href="teststyles.css" rel="stylesheet" type="text/css" />
+      <style>
+        header {
+          background-color: darkgray;
+        }
+
+
+      </style>
     </head>
     <body>
       <main>
-        <header>
-      <h1><span style="background-color: rgb(51,153,102); border: thick solid rgb(0,0,0);">Portfolio for Kevin Zuhoski</span></h1>
+        <header style="background-color: rgb(1,131,143)">
+      <h1>Portfolio for Kevin Zuhoski</h1>
         </header>
-      <hr />
-        <nav>
+      <hr style="border: thin dotted red;" />
+        <nav class="border">
       <!--Links to projects.html, contact.html, and testimonials.html -->
-          <p><a href="projects.html">Projects</a>
-             <a href="contact.html">Contact</a>
-             <a href="testimonials.html">Testimonials</a></p>
+          <p><a href="projects.html">Projects</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="testimonials.html">Testimonials</a></p>
+          <hr style="width:50%; border: 2px solid blueviolet;" />
         </nav>
-      <hr />
+
       <section>
-          <article id="about-me"> <!-- This is the first chunk inside
+          <article class="border" id="about-me"> <!-- This is the first chunk inside
           the section element-->
             <h2><em>About Me</em></h2>
             <img src="images/Aboutme2.jpg" alt="Portrait of Kevin Zuhoski" />
@@ -95,7 +104,7 @@
                 <ol>
                   <li>Haruki Murakami</li>
                   <li>Banana Yoshimoto</li>
-                  <li>Ayn Rand<li>
+                  <li>Ayn Rand</li>
                 </ol>
               <li>Video Games</li>
                 <ol>
@@ -120,7 +129,7 @@
               </ul>
           </article>
         </section>
-        <footer>
+        <footer style="background-color: fuchsia">
           <hr />
           <p>&copy; 2020 Kevin Zuhoski. All rights reserved.</p>
         </footer>
