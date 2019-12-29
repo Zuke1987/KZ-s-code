@@ -2,24 +2,26 @@
 <!--
 Name: Kevin Zuhoski
 Date Created: 12/27/19
-Most Recent Revision: 12/28/19
+Most Recent Revision: 12/29/19
 Email: kzuhoski87@gmail.com
 Purpose of Document: Populate the contact.html page with forms
 -->
 <html lang="en">
   <head>
     <title>Contact</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="styles/contact.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header>
       <h1>Contact Me</h1>
-    <header>
-    <hr />
+    </header>
+
     <nav>
       <p><a href="index-code-along-tables-lists-forms.html">Home</a></p>
     </nav>
-    <hr />
+
     <h2>Information Request</h2>
 
     <form action="submit.html" method="POST">
@@ -39,7 +41,7 @@ Purpose of Document: Populate the contact.html page with forms
         </select>
 
       <fieldset>
-        <legend>I am interested in (check all that apply)</legend><br />
+        <legend>I am interested in (check all that apply):</legend><br />
           <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
             <label for="frontEnd">Front End Web Development</label><br />
           <input type="checkbox" id="backEnd" name="interest" value="backEnd">
@@ -56,12 +58,12 @@ Purpose of Document: Populate the contact.html page with forms
             <label for="choice2">No</label><br />
       </fieldset>
 
-      <label for="info">Additional Information</label><br />
+      <label for="info">Additional Information</label>
         <textarea id="info" name="info"></textarea><br />
 
       <input type="submit" name="submit" value="Submit">
     <footer>
-
+      <p>&copy; 2020 Kevin Zuhoski. All rights reserved.</p>
     </footer>
   </body>
 </html>
