@@ -1,0 +1,172 @@
+<! DOCTYPE html>
+<!--
+  Name: Kevin Zuhoski
+  Date Created: 12/22/19
+  Most Recent Revision: 12/29/19
+  Email: kzuhoski87@gmail.com
+  Purpose of Document: To use tables, lists, and forms
+-->
+  <html lang="en">
+    <head>
+      <title>Kevin Zuhoski's Portfolio</title>
+      <link href="styles/main.css" rel="stylesheet" type="text/css" />
+      <style>
+
+
+        caption {
+          font-weight: bold;
+          font-size: 1.2em;
+          margin-bottom: 8px;
+        }
+
+        table, th, td {
+          border: 1px solid #0d1f2d;
+          border-collapse: collapse;
+          padding: 5px 10px;
+        }
+
+        table {
+          width: 90%;
+          margin: auto;
+        }
+
+        tr {
+          height: 30px;
+        }
+
+        th {
+          background-color: #546a7b;
+          color: #f2eded;
+        }
+
+        tr:nth-child(odd) {
+          background-color: #e4c3ad;
+        }
+
+
+      </style>
+    </head>
+    <body>
+      <main>
+        <header>
+          <h1>Portfolio for Kevin Zuhoski</h1>
+        </header>
+
+        <nav class="border">
+      <!--Links to projects.html, contact.html, and testimonials.html -->
+          <p><a href="projects.html">Projects</a></p>
+          <p><a href="contact.html">Contact</a></p>
+          <p><a href="testimonials.html">Testimonials</a></p>
+          <div class="clear-float"></div>
+        </nav>
+
+      <section>
+          <article class="border" id="about-me"> <!-- This is the first chunk inside
+          the section element-->
+            <h2><em>About Me</em></h2>
+            <img src="images/Aboutme2.jpg" alt="Portrait of Kevin Zuhoski" width="250" />
+            <p>I have some experience with programming in Java and Python through
+    coursework taken at the university.  I have also taken some other computer
+    science courses such as a course in discrete math.  In addition, I have read
+    a few books on the Java language, HTML, and CSS as well as completed some
+    tutorials in Python, and MySQL. Nevertheless, I still consider my self a
+    beginner when it comes to software and web development.  My background is in
+    two fields that are seemingly unrelated to the development world but both
+    have given me skills that would make me a successful developer.</p>
+    <p>I graduated in 2005 with a degree in Linguistics and a TESOL teaching
+      certificate, and recently graduated in May of this year with a degree in
+    Nursing.  Both degrees and subsequent jobs that I have been employed in have
+    given me people skills, critical thinking skills, the ability to problem
+    solve, as well as various other skills which are applicable to a developer.
+    Aside from my academic background, I also possess character traits that would
+    make me a successful developer.  I am a self-learner, persistent,
+    competitive, hard-working, analytical, logical, and I have an innate drive
+    to succeed as well as laser focus when there is something I want to accomplish.
+            </p>
+            <div class="clear-float"></div>
+          </article>
+
+          <article id="past-experiences"> <!-- This is the second chunk inside
+          the section element-->
+            <h2><em>Past Experiences</em></h2>
+            <img src="images/NursingClass.jpg" alt="Past Experiences" width="250" />
+            <div class="right-content">
+            <table>
+              <caption>Employment History</caption>
+              <thead>
+                <tr>
+                  <th>Years of Employment</th>
+                  <th>Title</th>
+                  <th>Company</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2018-Present</td>
+                  <td>Freelance Translator</td>
+                  <td>Amazon</td>
+                </tr>
+                <tr>
+                  <td>2019-Present</td>
+                  <td>Substitute Teacher</td>
+                  <td>Brentwood Union Free School District</td>
+                </tr>
+                <tr>
+                  <td>2017-2018</td>
+                  <td>Certified Nursing Assistant</td>
+                  <td>Gurwin Jewish Nursing and Rehabilitation Center</td>
+                </tr>
+                <tr>
+                  <td>2012-2015</td>
+                  <td>Assistant Language Teacher</td>
+                  <td>Shibukawa Board of Education - JET Program</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <div class="clear-float"></div>
+          </article>
+
+          <article id="hobbies"> <!-- This is the third chunk inside
+          the section element-->
+            <h2><em>Hobbies</em></h2>
+            <img src="images/Hobbies.jpg" alt="My Hobbies" width="250" />
+            <div class="right-content">
+            <ul>
+              <li>Authors</li>
+                <ol>
+                  <li>Haruki Murakami</li>
+                  <li>Banana Yoshimoto</li>
+                  <li>Ayn Rand</li>
+                </ol>
+              <li>Video Games</li>
+                <ol>
+                  <li>Zelda: A Link to the Past</li>
+                  <li>Metal Gear Solid</li>
+                  <li>Final Fantasy VI</li>
+                </ol>
+              </ul>
+              <ul>
+                <li>Sports</li>
+                  <ul>
+                    <li>Rowing</li>
+                    <li>Football</li>
+                    <li>Golf</li>
+                  </ul>
+                <li>Outdoor Activities</li>
+                  <ul>
+                    <li>Hiking</li>
+                    <li>Going to the beach</li>
+                    <li>Fishing</li>
+                  </ul>
+              </ul>
+              </div>
+              <div class="clear-float"></div>
+          </article>
+        </section>
+        <footer>
+          <p>&copy; 2020 Kevin Zuhoski. All rights reserved.</p>
+        </footer>
+      </main>
+    </body>
+  </html>
