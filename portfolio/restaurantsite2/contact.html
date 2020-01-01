@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+Name: Kevin Zuhoski
+Date Created: 12/31/19
+Most Recent Revision: 12/31/19
+Email: kzuhoski87@gmail.com
+Purpose of Document: Create the second version of restaurant contact page
+-->
+<html lang="en">
+  <head>
+
+    <title>Contact Us</title>
+
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+    rel="stylesheet">
+
+
+
+    <style>
+    /* Forms Styling */
+
+    label {
+        font-size: 1.2em;
+        color: black;
+
+    }
+
+    label[for="name"], label[for="phone"], label[for="email"],
+    label[for="contactDay"] {
+      font-weight: bold;
+    }
+
+    div.form {
+    display: block;
+    text-align: center;
+    }
+
+    form
+    {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    }
+
+
+
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <main>
+
+      <header>
+        <h1>Zuke's Bar and Grill</h1>
+      </header>
+
+
+        <nav>
+        <!--Links to index.html, menu.html, and contactUs.html -->
+          <a href="index.html">Home</a> &nbsp
+          <a href="menu.html">Menu</a> &nbsp
+          <a href="contact.html">Contact Us</a>
+          <div class="clear-float"></div>
+        </nav>
+
+
+  <div class="form">
+    <form action="submit.html" method="POST">
+       <p>
+        <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+       </p>
+
+      <p>
+        <label for="email">Email:<label>
+          <input type="text" id="email" name="email">
+      </p>
+
+      <p>
+        <label for="phone">Phone:</label>
+          <input type="text" id="phone" name="phone"> <br />
+      </p>
+
+      <p>
+        <label for="inquiry">Reason for Inquiry:</label>
+          <select id="inquiry" name="inquiry">
+            <option value="default" selected>Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+      </p>
+
+      <p>
+        <label for="info">Additional Information:</label>
+            <textarea id="info" name="info"></textarea>
+      </p>
+
+      <p>
+          <label for="attendance">Have you ever been to the restaurant?</label>
+            <input type="radio" id="choice1" name="attendance" value="no">
+              <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="attendance" value="yes">
+              <label for="choice2">Yes</label>
+      </p>
+
+      <p>
+        <label for="contactDay">Best days to contact you:</label>
+          <input type="checkbox" id="monday" name="contactDay" value="monday">
+            <label for="frontEnd">M</label>
+          <input type="checkbox" id="tuesday" name="contactDay" value="tuesday">
+            <label for="backEnd">T</label>
+          <input type="checkbox" id="wednesday" name="contactDay" value="wednesday">
+            <label for="database">W</label>
+          <input type="checkbox" id="thursday" name="contactDay" value="thursday">
+            <label for="database">Th</label>
+          <input type="checkbox" id="friday" name="contactDay" value="friday">
+            <label for="database">F</label>
+      </p>
+
+      <p>
+        <input type="submit" name="sendRequest" value="Send Request">
+      </p>
+  </form>
+</div>
+
+
+      <footer>
+        <p>
+          555 Zuke Street, Cutchogue, NY 11935 <br />
+          (631)734-1234
+        </p>
+      </footer>
+    </main>
+    
+  </body>
+</html>

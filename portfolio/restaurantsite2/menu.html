@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+Name: Kevin Zuhoski
+Date Created: 12/30/19
+Most Recent Revision: 12/30/19
+Email: kzuhoski87@gmail.com
+Purpose of Document: Create the second version of the restaurant menu page
+-->
+
+<html lang="en">
+  <head>
+
+
+    <title>Menu Page</title>
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+    rel="stylesheet">
+
+
+
+    <style>
+      table, th, td {
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      table {
+        width: 90%;
+        margin:20px auto 60px;
+        background-color: black;
+      }
+
+      td {
+        vertical-align: top;
+        padding-top: 10px;
+        color: white;
+      }
+
+      th {
+        font-size: 1.2em;
+        color: white;
+      }
+
+      #beverageTable {
+        width: 45%;
+        margin: 20px 45% 80px 5%;
+        background-color: white;
+        border: solid thick rgb(38,50,56);
+
+      }
+
+      #beverageTable thead {
+        background-color: rgb(120,144,156);
+      }
+
+      #beverageTable th {
+        text-align: left;
+        font-size: 1.2em;
+        color: white;
+
+      }
+
+      #beverageTable td {
+        text-align: left;
+      }
+
+      #beverageTable tbody tr:nth-child(even) {
+        background-color: rgb(120,144,156);
+      }
+
+      #beverageTable tbody tr:nth-child(odd) {
+        background-color: black;
+      }
+
+      body {
+        background-color: #696969;
+      }
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 align="center">Zuke's Bar and Grill</h1>
+      </header>
+
+
+      <nav>
+
+        <!--Links to index.html, menu.html, and contactUs.html -->
+          <a href="index.html">Home</a> &nbsp
+          <a href="menu.html">Menu</a> &nbsp
+          <a href="contact.html">Contact Us</a>
+          <div class="clear-float"></div>
+
+      </nav>
+
+
+        <section>
+          <article>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Burger and Fries</th>
+                  <th>Hot Dog and Chips</th>
+                  <th>Italian Sausage and Peppers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    An American Classic! <br />
+                    Your choice - with or without cheese <br />
+                    Pickle, onion, tomato, and lettuce <br />
+                    Served with our famous thick cut <br />
+                    french fries <br />
+                    $7.95
+                  </td>
+                  <td>
+                    A Summer Classic! <br />
+                    Your choice - white or wheat bun <br />
+                    Relish, mustard, and ketchup <br />
+                    Served with our house-made chips <br />
+                    $7.95
+                  </td>
+                  <td>
+                    An All-Time Favorite! <br />
+                    Your choice - mild or spicy Cole Slaw <br />
+                    Served with garlic mashers <br />
+                    $10.95
+                  </td>
+                </tr>
+                <tr>
+                  <th>Tenderloin Sandwich and Chips</th>
+                  <th>House Salad</th>
+                  <th>Brisket Sandwich and Fries</th>
+                </tr>
+                <tr>
+                  <td>
+                    Really Hits the Spot! <br />
+                    Plain or Sesame Seed Bun <br />
+                    Pickle, onion, tomato, and lettuce <br />
+                    Served with our house-made chips <br />
+                    $8.95
+                  </td>
+                  <td>
+                    On the Lighter Side <br />
+                    Your choice - with or without cheese <br />
+                    Iceberg lettuce, tomatoes, peppers <br />
+                    Thousand Island or Ranch <br />
+                    Dressing Served with a dinner roll <br />
+                    $6.95
+                  </td>
+                  <td>
+                    A Taste of Texas! <br />
+                    Smoked Brisket on thick cut <br />
+                    Texas Toast <br />
+                    Cole Slaw <br />
+                    Served with our famous thick-cut <br />
+                    french fries <br />
+                    $7.95
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </article>
+
+          <article>
+            <table id="beverageTable">
+              <thead>
+                <tr>
+                  <th>
+                    Beverages
+                  </th>
+                  <th>
+                  </th>
+                </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      Root Beer
+                    </td>
+                    <td>
+                      $3.00
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Bottled Water
+                    </td>
+                    <td>
+                      $1.25
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Lemonade
+                    </td>
+                    <td>
+                      $1.00
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Iced Tea
+                    </td>
+                    <td>
+                      $1.25
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+
+          </article>
+        </section>
+        <footer>
+          <p>
+          555 Zuke Street, Cutchogue, NY 11935 <br />
+          (631)734-1234
+          </p>
+        </footer>
+      </main>
+
+    </body>
