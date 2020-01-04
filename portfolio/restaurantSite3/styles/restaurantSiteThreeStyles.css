@@ -1,0 +1,169 @@
+/* Style and spacing for headers and footers */
+header {
+  padding: 40px;
+  text-align: center;
+  background: rgb(0,134,179);
+  color: white;
+  font-size: 20px;
+  border: thick solid black;
+  font-family: 'Cinzel', serif;
+  margin:0 auto;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background: rgb(0,134,179);
+  color: white;
+  font-size: 20px;
+  border: thick solid black;
+  font-family: 'Cinzel', serif;
+  margin:0 auto;
+}
+
+/* color of body of all pages on website */
+body {
+  background-color: #696969;
+}
+
+/* Style and margins for jumbotron on home page */
+.jumbotron {
+  background-color: rgb(144,164,174);
+  border:thick solid black;
+  margin:0 auto;
+}
+/* Style for text inside jumbotron on home page */
+#jumbo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4em;
+}
+
+/* Styles and spacing for navigation buttons and all states of buttons */
+nav {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  nav .btn {
+      font-size: 1.2em;
+      font-family: 'Cinzel', serif;
+      background-color: black;
+      color: rgb(0,134,179);
+      text-decoration: none;
+      margin:0 20px 0 0;
+  }
+
+  nav .btn:link {
+    background-color: black;
+    color: rgb(0,134,179);
+    text-decoration: none;
+  }
+
+  nav .btn:visited {
+    color: white;
+  }
+/* Makes the font bold when hovering over link buttons.
+Also, eliminates underlines. */
+  nav .btn:hover {
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  nav .btn:active {
+    text-decoration: none;
+  }
+
+  /* Style for carousel and position in container */
+  #restaurantCarousel {
+    width: 100%;
+    border: solid thick rgb(38,50,56);
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .carousel .item {
+    height: 500px;
+  }
+
+  .item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+  }
+
+/* Width and margins for forms to make them a percentage of the size
+of container and centered in container. Also, there is padding to
+vertically separate each form control. */
+  .form-group {
+    width: 50%;
+    margin:0 auto;
+    padding-bottom: 20px;
+
+  }
+
+/* Makes distance between form and form label closer */
+  .col-form-label {
+    padding-left: 30px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1em;
+  }
+
+/* Makes the required form labels bold */
+  label[for="name"], label[for="phone"],
+  label[for="email"], label[for="inquiry"],
+  label[for="contactDay"] {
+    font-weight: bold;
+  }
+
+/* Style for button "Send Request" button on contact form.
+Modifies default state of bootstrap primary button*/
+
+.btn-primary {
+  margin:0 auto;
+  background-color: black;
+  color: white;
+  font-family: 'Cinzel', serif;
+  border: thick solid rgb(38,50,56);
+}
+
+.btn-primary:visited {
+  background-color: rgb(144,164,174);
+  color: white;
+  font-family: 'Cinzel', serif;
+  border: thick solid rgb(38,50,56);
+}
+
+.btn-primary:hover {
+  background-color: rgb(0,134,179);
+  color: white;
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  border: thick solid rgb(38,50,56);
+}
+
+.btn-primary:focus {
+  background-color: rgb(144,164,174);;
+  color: white;
+  font-family: 'Cinzel', serif;
+  border: thick solid rgb(38,50,56);
+}
+
+.btn-primary:active {
+  background-color: rgb(0,134,179);
+  color: white;
+  font-family: 'Cinzel', serif;
+  border: thick solid rgb(38,50,56);
+}
+
+/*Style for noscript element*/
+noscript {
+  display: block;
+  text-align: center;
+  margin:0 auto;
+  font-family: 'Cinzel', serif;
+
+}

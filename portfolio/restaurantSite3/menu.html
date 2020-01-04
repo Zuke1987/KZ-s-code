@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <!--Script for home icon font-->
+     <script src="https://kit.fontawesome.com/3d8112fcd9.js" crossorigin="anonymous"></script>
+        <!--meta charset for bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1, shrink-to-fit=no">
+
+        <title>Menu</title>
+
+        <!--Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    		crossorigin="anonymous">
+
+       <!--Links to external style sheet and embedded font from GoogleFonts-->
+       <link href="styles/restaurantSiteThreeStyles.css" rel="stylesheet" type="text/css">
+       <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+       rel="stylesheet">
+
+       <!--CSS internal styles -->
+   		<style>
+
+        /* Gives table a background color and gives margins. Top
+        and bottom margins 0 to align with nav. Auto horizontally
+        centers #menu div in it's .row container div.  */
+        #menu {
+          background-color: black;
+          margin:0 auto;
+        }
+
+        /* Styles Menu items, centers text, and centers each
+        .menuItem div in .row div which contains entire menu*/
+        .menuItem {
+          text-align: center;
+          font-family: 'Cinzel', serif;
+          color: white;
+          font-size: .9em;
+          padding-bottom: 15px;
+          margin:0 auto;
+        }
+        /* Styles menu item names to be larger than
+        menu item descriptions and also bold */
+        .menuItemName {
+          font-size: 1.3em;
+          font-weight: bold;
+        }
+
+        /* Style for table of beverages. Negative left/right margin
+        to align table border with menu border.  */
+        #beverageTable {
+          border: solid thick rgb(38,50,56);
+          width: 100%;
+          color: white;
+          margin: 30px 0px;
+          height: 200px;
+
+        }
+
+        /*Sets height of table header to make larger than table data
+        and gives background color to match alternating color style
+        of table*/
+        #beverageTable th {
+          height: 50px;
+          background-color: rgb(120,144,156);
+        }
+        /* Pads both th and td so text is slightly away from table border */
+        #beverageTable th, td {
+          padding-left: 5px;
+        }
+
+        /* Gives alternating colors to table rows*/
+        #beverageTable tbody tr:nth-child(even) {
+          background-color: rgb(120,144,156);
+        }
+
+        #beverageTable tbody tr:nth-child(odd) {
+          background-color: black;
+        }
+
+      </style>
+
+	</head>
+	<body>
+    <!--container div needed for bootstrap-->
+    <div class="container">
+      <!--Header with restaurant name-->
+      <header>
+        <h1>Zuke's Bar and Grill</h1>
+      </header>
+			<!--Website navigation-->
+			<nav>
+        <!-- Home icon button-->
+        <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+
+        <a class="btn badge-pill" href="menu.html">Menu</a>
+        <a class="btn badge-pill" href="contact.html">Contact Us</a>
+			</nav>
+
+      <section>
+        <article style="border:thick solid rgb(144,164,174);" id="menu">
+          <div class="row">
+            <div class="menuItem col-lg">
+              <span class="menuItemName">Burger and Fries</span> <br />
+              An American Classic! <br />
+              Your choice - with or without cheese <br />
+              Pickle, onion, tomato, and lettuce <br />
+              Served with our famous thick cut <br />
+              french fries <br />
+              $7.95
+            </div>
+            <div class="menuItem col-lg">
+              <span class="menuItemName">Hot Dog and Chips</span><br />
+              A Summer Classic! <br />
+              Your choice - white or wheat bun <br />
+              Relish, mustard, and ketchup <br />
+              Served with our house-made chips <br />
+              $7.95
+            </div>
+            <div class="menuItem col-lg">
+              <span class="menuItemName">Italian Sausage and Peppers</span> <br />
+              An All-Time Favorite! <br />
+              Your choice - mild or spicy Cole Slaw <br />
+              Served with garlic mashers <br />
+              $10.95
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="menuItem col-lg">
+              <span class="menuItemName">Tenderloin Sandwich and Chips</span> <br />
+              Really Hits the Spot! <br />
+              Plain or Sesame Seed Bun <br />
+              Pickle, onion, tomato, and lettuce <br />
+              Served with our house-made chips <br />
+              $8.95
+            </div>
+            <div class="menuItem col-lg">
+              <span class="menuItemName">House Salad</span> <br />
+              On the Lighter Side <br />
+              Your choice - with or without cheese <br />
+              Iceberg lettuce, tomatoes, peppers <br />
+              Thousand Island or Ranch <br />
+              Dressing Served with a dinner roll <br />
+              $6.95
+            </div>
+            <div class="menuItem col-lg">
+              <span class="menuItemName">Brisket Sandwich and Fries</span> <br />
+              A Taste of Texas! <br />
+              Smoked Brisket on thick cut <br />
+              Texas Toast <br />
+              Cole Slaw <br />
+              Served with our famous thick-cut <br />
+              french fries <br />
+              $7.95
+            </div>
+          </div>
+
+
+        </article>
+
+        <article id="beverage">
+          <div class="row">
+            <div class="col-lg beverage_Announcements">
+              <table id="beverageTable">
+                <thead>
+                  <tr>
+                    <th>
+                      Beverages
+                    </th>
+                    <th>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      Root Beer
+                    </td>
+                    <td>
+                      $3.00
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Bottled Water
+                    </td>
+                    <td>
+                      $1.25
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Lemonade
+                    </td>
+                    <td>
+                      $1.00
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      Iced Tea
+                    </td>
+                    <td>
+                      $1.25
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!--Carousel to display announcements -->
+            <!--Photos from Canva.com -->
+            <div class="col-lg beverage_Announcements">
+              <div id="restaurantCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="img-fluid d-block w-100" src="images3/We're opening a new location!.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img-fluid d-block w-100" src="images3/We're rolling out our seasonal menu, with special options for this season.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="img-fluid d-block w-100" src="images3/Copy of The drink of the Month is SG Special Brew.jpg" alt="Third slide">
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </article>
+      </section>
+
+      <!--Footer with restaurant address-->
+      <footer>
+        <div>
+          555 Zuke Street, Cutchogue, NY 11935 <br />
+          (631)734-1234
+        </div>
+      </footer>
+    </div>
+
+        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
