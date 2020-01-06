@@ -29,29 +29,30 @@
 
             <!--Form control for "Starting Bet:"
             label and starting bet textbox-->
-            <form name="startingBet" onsubmit="return validateBet();"
-            onreset="resetGame();" class="w-50 mx-auto">
-                <div class="form-inline form-group ml-4">
-                  <label for="bets" class="col-form-label ml-5">Starting Bet:</label>
-                    <div>
-                      <input style="border: solid thick green;" type="text"
-                      class="form-control ml-5" id="bets" name="bets">
-                    </div>
-                </div>
+          <form name="startingBet" onsubmit="return validateBet();"
+          onreset="resetGame();" class="w-50 mx-auto">
+            <div class="pr-5 form-inline form-group">
+              <label for="bets"
+              class="text-left col col-form-label">Starting Bet:</label>
+              <div class="pl-5 col">
+                <input style="border: solid thick green;" type="text"
+                class="ml-3 form-control" id="bets" name="bets">
+              </div>
+            </div>
 
-                <div class="form-group">
-                  <button type="submit" id="playButton" class="btn btn-outline-success
-                  btn-lg d-block mx-auto px-5">
+            <div class="form-group">
+              <button type="submit" id="playButton" class="btn btn-outline-success
+                btn-lg d-block mx-auto px-5">
                     Play
-                  </button>
-                </div>
-                <div class="form-group">
-                  <button type="reset" id="resetButton" class="btn btn-outline-success
+              </button>
+            </div>
+            <div class="form-group">
+            <button type="reset" id="resetButton" class="btn btn-outline-success
                   btn-lg d-block mx-auto px-5">
                     Reset
-                  </button>
-                </div>
-              </form>
+            </button>
+          </div>
+        </form>
 
             <!--div for top border and results-->
             <div id="results" class="row text-center d-none border-top-0 border-dark w-50 mx-auto pt-3">
@@ -95,7 +96,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
      <!-- Script for game functionality -->
-    <script type="text/JavaScript" src="/Users/kevinzuhoski/Documents/Repos/KZ-s-code/portfolio/luckySevens/luckySevensScripts/luckySevensScript.js"></script>
+    <script type="text/JavaScript" src="luckySevensScripts/luckySevensScript.js"></script>
 
   </body>
 </html>
