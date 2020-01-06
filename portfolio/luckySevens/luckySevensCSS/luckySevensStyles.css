@@ -1,0 +1,63 @@
+/*Gives the game a black background*/
+body {
+  background-color: black;
+}
+/*Styles the header*/
+header {
+  font-family: 'Luckiest Guy', cursive;
+  font-size:4em;
+  color:red;
+
+}
+/* Gives padding to the div container to have it vertically centered. */
+.container {
+  padding-top: 20%;
+  padding-bottom: 20%
+}
+
+/* Style for the results title above the table. */
+#results {
+  font-family: 'Luckiest Guy', cursive;
+  font-size:4em;
+  color: red;
+}
+
+/* Styles for the "Play" and "Reset" button in each of their states. */
+.btn {
+  font-family: 'Luckiest Guy', cursive;
+  color:white;
+  border:thick solid white;
+}
+
+.btn:visited {
+  background-color: black;
+}
+
+.btn:hover {
+   background-color: red;
+   border: thick solid white;
+}
+
+.btn:focus {
+  background-color: black;
+}
+
+.btn:active {
+  background-color: black;
+}
+
+/* Style for the results table. */
+table {
+  font-family: 'Luckiest Guy', cursive;
+  font-size:1.2em;
+  color: white;
+  border-color: white;
+
+}
+
+/* Style for the "Starting Bet" label for the corresponding form control. */
+label[for="bets"] {
+  font-family: 'Luckiest Guy', cursive;
+  font-size:1.4em;
+  color: green;
+}
